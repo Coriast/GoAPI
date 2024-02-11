@@ -19,7 +19,7 @@ func TestCreateProduct(t *testing.T) {
 	db.AutoMigrate(&entity.Product{})
 	product, err := entity.NewProduct("Product 1", 10)
 	assert.NoError(t, err)
-	productDB := database.NewProduct(db)
+	productDB := database.NewProductDB(db)
 
 	err = productDB.Create(product)
 	assert.NoError(t, err)
@@ -38,7 +38,7 @@ func TestFindAllProducts(t *testing.T) {
 		assert.NoError(t, err)
 		db.Create(product)
 	}
-	productDB := database.NewProduct(db)
+	productDB := database.NewProductDB(db)
 	products, err := productDB.FindAll(1, 10, "asc")
 	assert.NoError(t, err)
 	assert.Len(t, products, 10)
