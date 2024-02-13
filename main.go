@@ -29,7 +29,9 @@ func main() {
 	r.Use(middleware.Logger)
 	r.Post("/products", productH.CreateProduct)
 	r.Get("/products/{id}", productH.GetProduct)
+	r.Get("/products", productH.GetProducts)
 	r.Put("/products/{id}", productH.UpdateProduct)
+	r.Delete("/products/{id}", productH.DeleteProduct)
 
 	http.ListenAndServe(":8000", r)
 }
