@@ -9,10 +9,12 @@ Content-Type: application/json
 ###
 
 GET http://localhost:8000/products/bace0599-4224-4fdb-bd52-7e95e13635fd	HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjA2MzUsInN1YiI6IjNiOThmNTQ3LTE1ZGItNGI1Zi05YjQwLTQ4ZDFmOTM2OTFmNiJ9.qTHlLLSvUxO3XjF266790-S3NluUdsHh7Y5VjwT5nx0
 
 ###
 
 GET http://localhost:8000/products	HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDc5MjA2MzUsInN1YiI6IjNiOThmNTQ3LTE1ZGItNGI1Zi05YjQwLTQ4ZDFmOTM2OTFmNiJ9.qTHlLLSvUxO3XjF266790-S3NluUdsHh7Y5VjwT5nx0
 
 ###
 
