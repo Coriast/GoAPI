@@ -32,6 +32,7 @@ import (
 // @securityDefinitions.apikey ApiKeyAuth
 // @in header
 // @name Authorization
+// git test
 func main() {
 	configs, err := configs.LoadConfig(".")
 	if err != nil {
